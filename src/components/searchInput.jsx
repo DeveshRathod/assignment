@@ -12,7 +12,6 @@ const SearchInput = () => {
   };
 
   const handleSubmit = () => {
-    console.log(search);
     return search;
   };
 

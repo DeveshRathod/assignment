@@ -7,9 +7,7 @@ const CartCard = ({ id, title, image, price }) => {
   const [cart, setCart] = useRecoilState(cartState);
 
   const handleDelete = () => {
-    // Filter out the item with the given id
     const updatedCart = cart.filter((item) => item.id !== id);
-    // Update the cart state
     setCart(updatedCart);
   };
 

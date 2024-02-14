@@ -14,6 +14,6 @@
 username: 'kminchelle'
 password: '0lelplR'
 
-# for icons and some other components I have used Material-UI
+# for icons and some other components I have used Mui
 
 # for styling I have used Tailwind CSS

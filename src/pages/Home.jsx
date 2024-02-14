@@ -64,14 +64,18 @@ const Home = () => {
         />
       </div>
       <div className=" flex flex-wrap gap-8 mt-2">
-        {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            cart={cart}
-            setCart={setCart}
-          />
-        ))}
+        {filteredProducts.length === 0 ? (
+          <p>No Products...</p>
+        ) : (
+          filteredProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              cart={cart}
+              setCart={setCart}
+            />
+          ))
+        )}
       </div>
     </div>
   );

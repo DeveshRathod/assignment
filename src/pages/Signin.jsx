@@ -35,7 +35,6 @@ const Signin = ({ setIsAuth }) => {
         to="/"
         curr="Sign In"
         warnLink="/signup"
-        warnText="Sign Up"
         onClick={async () => {
           try {
             const response = await axios.post(
